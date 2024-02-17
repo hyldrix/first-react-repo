@@ -1,0 +1,44 @@
+@import '../../styles/settings.scss';
+
+.columnForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 10px;
+
+
+
+    input {
+        margin: 12px 20px;
+
+    }
+
+    button {
+        margin: 12px 12px 12px 12px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .columnForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        span {
+            flex: 100%;
+            input {
+                margin: 20px;
+            }
+
+        }
+
+
+
+    }
+}
