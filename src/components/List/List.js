@@ -3,15 +3,9 @@ import styles from './List.module.scss'
 import ColumnForm from '../ColumnForm/ColumnForm.js';
 import { useSelector } from 'react-redux';
 
-
-
 const List = () => {
 
     const columns = useSelector(state => state.columns);
-
-
-
-
     return (
         <div className={styles.list}>
             <header className={styles.header}>
