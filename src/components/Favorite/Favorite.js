@@ -4,7 +4,7 @@ const Favorite = () => {
 
     return (
         <div className={styles['favorite']}>
-            <PageTitle>My first React App</PageTitle>
+            <PageTitle>Favourite</PageTitle>
             <p className={styles.subtitle}>All your favorites</p>
 
         </div>

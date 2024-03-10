@@ -6,12 +6,9 @@ import { useSelector } from 'react-redux/es/hooks/useSelector.js';
 import { getFilteredCards } from '../../redux/store';
 
 const Column = (props) => {
-    
+    console.log(props)
     const cards = useSelector(state => getFilteredCards(state, props.id));
-    console.log('Column render');
 
-
-    console.log(cards);
 
     return (
         <article className={styles.column}>
