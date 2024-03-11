@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux/es/hooks/useSelector.js';
 import { getFilteredCards } from '../../redux/store';
 
 const Column = (props) => {
-    console.log(props)
     const cards = useSelector(state => getFilteredCards(state, props.id));
 
 
@@ -17,7 +16,7 @@ const Column = (props) => {
                 </span>{props.title}
             </h2>
             <ul className={styles.cards}>
-                {cards.map(card => <Card key={card.id} title={card.title} />)}
+                {cards.map(card => <Card key={card.id} id={card.id} title={card.title} />)}
             </ul>
             <CardForm columnId={props.id} />
         </article>

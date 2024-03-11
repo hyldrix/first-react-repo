@@ -5,7 +5,7 @@ import { useState } from 'react';
 import TextInput from '../TextInput/TextInput.js';
 import Button from '../Button/Button.js';
 
-const ListForm = (props) => {
+const ListForm = () => {
     const dispatch = useDispatch();
 
     const [title, setTitle] = useState('');
