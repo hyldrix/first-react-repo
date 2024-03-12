@@ -1,7 +1,7 @@
 
 import { useSelector } from 'react-redux';
 import styles from './Lists.module.scss'
-import { getAllLists } from '../../redux/store.js';
+import { getAllLists } from '../../redux/listsRedux.js';
 import { Link } from 'react-router-dom';
 
 const Lists = () => {
