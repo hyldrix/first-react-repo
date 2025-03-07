@@ -6,7 +6,8 @@ import { useSelector } from 'react-redux/es/hooks/useSelector.js';
 import { getFilteredCards } from '../../redux/cardsRedux.js';
 
 const Column = (props) => {
-    const cards = useSelector(state => getFilteredCards(state, props.id));
+
+    const cards = useSelector((state) => getFilteredCards(state, props.id));
 
 
     return (
@@ -22,6 +23,6 @@ const Column = (props) => {
         </article>
 
     );
-}
+};
 
 export default Column;
