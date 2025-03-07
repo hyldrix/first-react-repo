@@ -3,6 +3,8 @@
 This simple to-do list app features lists, columns, and cards, allowing users to organize tasks efficiently. The project was part of my Front-end bootcamp journey with Kodilla. 
 Project utilizes React
 
+![TodoList](https://github.com/hyldrix/first-react-repo/blob/main/public/preview/todo.png?raw=true)
+
 ## Functionality
 - [x] Adding new list
 - [x] Adding new Columns
@@ -14,7 +16,7 @@ Project utilizes React
 
 In the project directory, you can run:
 
-``` yarn start```
+```yarn start```
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
