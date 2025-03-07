@@ -7,8 +7,8 @@ const ADD_CARD = createActionName('ADD_CARD');
 
 export const getCardById = ({ cards }, cardId) => cards.find(card => card.id === cardId);
 export const getFavCards = ({ cards }) => cards.filter(card => card.isFavorite === true)
-export const getFilteredCards = ({ cards, searchString }, columnId) => cards
-    .filter(card => card.columnId === columnId && compareStrings(card.title, searchString));
+export const getFilteredCards = (state, columnId) => state.cards
+    .filter(card => card.columnId === columnId && compareStrings(card.title, state.searchString));
 
 export const addCard = payload => ({ type: ADD_CARD, payload });
 export const toggleCardFavorite = payload => ({ type: TOGGLE_CARD_FAVORITE, payload });
